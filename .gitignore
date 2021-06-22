@@ -1,0 +1,14 @@
+# General & C#
+bin/
+obj/
+appsettings.json
+*.db
+.vscode
+
+# Nodejs
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+.eslintcache
