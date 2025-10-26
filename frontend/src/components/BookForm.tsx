@@ -34,20 +34,20 @@ function getDisplayInfo(type: BookFormType) {
 
 export default function BookForm(props: BookFormProps) {
   const { type, prefillData, appState, onSubmit } = props
+
+  const [prevPrefillData, setPrevPrefillData] = useState<Book | undefined>(prefillData)
   const [id, setId] = useState(prefillData?.id || '')
   const [title, setTitle] = useState(prefillData?.title || '')
   const [description, setDescription] = useState(prefillData?.description || '')
   const [isbn, setIsbn] = useState(prefillData?.isbn || '')
 
-  // useState initializers run only once, so we need this
-  useEffect(() => {
-    if (prefillData) {
-      setId(prefillData.id)
-      setTitle(prefillData.title)
-      setDescription(prefillData.description)
-      setIsbn(prefillData.isbn)
-    }
-  }, [prefillData])
+  if (prefillData && prefillData !== prevPrefillData) {
+    setPrevPrefillData(prefillData)
+    setId(prefillData.id)
+    setTitle(prefillData.title)
+    setDescription(prefillData.description)
+    setIsbn(prefillData.isbn)
+  }
 
   const clearForm = () => {
     setId('')
