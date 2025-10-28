@@ -25,10 +25,15 @@ Handle a request to remove a book.
 
 DEL /api/books/:id
 
+## Technology stack
+### Front-end implementation:
+- Technology/Language: React/Nextjs/Typescript
+
+### Back-end implementation:
+- Technology/Language: Nodejs/Express/Typescript
+
 ### Database implementation:
-- Provider: Atlas Mongodb  
+- Provider: Atlas MongoDB
 - Database: MongoDB
 
-### Front-end implementation:
-- Technology/Language: Nodejs/Javascript
-- Framework/Library: React  
+![alt text](bookstore.png)
