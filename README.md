@@ -30,7 +30,7 @@ DEL /api/books/:id
 - Technology/Language: React/Nextjs/Typescript
 
 ### Back-end implementation:
-- Technology/Language: Nodejs/Express/Typescript
+- Technology/Language: Bun/Typescript
 
 ### Database implementation:
 - Provider: Atlas MongoDB
