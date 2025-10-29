@@ -1,5 +1,5 @@
 # Bookstore
-The project is intended to be a website that displays a list of books that the user added.
+The project is intended to be a website that displays a list of books that the user have saved.
 
 ## Feature list
 ### API endpoints:
@@ -30,7 +30,7 @@ DEL /api/books/:id
 - Technology/Language: React/Nextjs/Typescript
 
 ### Back-end implementation:
-- Technology/Language: Bun/Typescript
+- Technology/Language: Nodejs/Express/Typescript
 
 ### Database implementation:
 - Provider: Atlas MongoDB
