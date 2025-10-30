@@ -37,3 +37,14 @@ DEL /api/books/:id
 - Database: MongoDB
 
 ![alt text](bookstore.png)
+
+## How to run the project locally
+You have the option run just the frontend and use in-memory data for testing purposes, or run both the frontend and backend with a valid connection to a MongoDB database.
+
+### Prerequisites
+- Node.js and npm installed on your machine.
+- MongoDB database (if running the backend).
+
+### Configuration
+- For frontend, go to next.config.js and follow the instructions to set up necessary environment variables.
+- For backend, go to config/default.ts and follow the instructions to set up necessary environment variables.
